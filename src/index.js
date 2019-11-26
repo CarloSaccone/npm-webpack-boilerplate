@@ -1,5 +1,9 @@
 /*** src/index.js   ***/
 import React from 'react';
-import './styles.css';
-const MyComponent = () => <h1>Hello from My Component</h1>;
+import './styles.scss';
+const MyComponent = () => (
+    <div className="box">
+        <h1>Hello from My Component</h1>
+    </div>
+);
 export default MyComponent;
