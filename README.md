@@ -5,6 +5,7 @@ a boilerplate to create react components ready to be published as npm components
 ## usage
 
 -   clone the repo and publish to your github
+-   change package name and info in package.json
 -   `npm install`
 -   put your component into the /src dir
 -   npm install any required dependency
