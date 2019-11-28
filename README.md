@@ -17,6 +17,7 @@ a boilerplate to create react components ready to be published as npm components
 
 -   easy setup a toolkit to publish npm components
 -   zero-config demo code published to github pages
+-   use react-jss to style components => better portability
 
 ## credits
 

@@ -1,13 +1,22 @@
 /*** src/index.js   ***/
 import React, { useState } from 'react';
-import './styles.scss';
+import { create } from 'jss';
+import preset from 'jss-preset-default';
+import MyStyles from './style';
+
 const MyComponent = () => {
+    const classes = MyStyles();
+
     const [test, setTest] = useState({ name: 'pippo' });
     const updated = { ...test };
 
+    const jss = create(preset());
+
     return (
-        <div className="box">
-            <h1>Hello from My Component {test.name}</h1>
+        <div className={classes.box}>
+            <h1 className={classes.title}>
+                Hello from My Component {test.name}
+            </h1>
         </div>
     );
 };
